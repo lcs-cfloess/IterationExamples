@@ -29,6 +29,9 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Below this line, try combining a loop and a single statement to generate the goal
+for i in stride(from: 0, through: 300, by: 20){
+    canvas.drawLine(fromX: i, fromY: 0, toX: 300, toY: i)
+}
 
 /*:
  ## Template code
